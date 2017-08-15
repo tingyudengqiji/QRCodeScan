@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F17217861F42A4B900FABC1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217851F42A4B900FABC1E /* main.m */; };
+		F172178F1F42A4B900FABC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F172178D1F42A4B900FABC1E /* Main.storyboard */; };
+		F17217911F42A4B900FABC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17217901F42A4B900FABC1E /* Assets.xcassets */; };
+		F17217941F42A4B900FABC1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17217921F42A4B900FABC1E /* LaunchScreen.storyboard */; };
+		F172179F1F42A4B900FABC1E /* QingSongGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F172179E1F42A4B900FABC1E /* QingSongGoTests.m */; };
+		F17217AA1F42A4B900FABC1E /* QingSongGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217A91F42A4B900FABC1E /* QingSongGoUITests.m */; };
+		F17217CF1F42A52000FABC1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217B91F42A52000FABC1E /* AppDelegate.m */; };
+		F17217D01F42A52000FABC1E /* FYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217BB1F42A52000FABC1E /* FYTabBarController.m */; };
+		F17217D11F42A52000FABC1E /* FYBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217BE1F42A52000FABC1E /* FYBaseNavController.m */; };
+		F17217D21F42A52000FABC1E /* FYClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217C11F42A52000FABC1E /* FYClassifyViewController.m */; };
+		F17217D31F42A52000FABC1E /* FYDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217C41F42A52000FABC1E /* FYDiscoveryViewController.m */; };
+		F17217D41F42A52000FABC1E /* FYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217C81F42A52000FABC1E /* FYHomeViewController.m */; };
+		F17217D51F42A52000FABC1E /* FYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217CB1F42A52000FABC1E /* FYMineViewController.m */; };
+		F17217D61F42A52000FABC1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17217CE1F42A52000FABC1E /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F172179B1F42A4B900FABC1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F17217791F42A4B900FABC1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F17217801F42A4B900FABC1E;
+			remoteInfo = QingSongGo;
+		};
+		F17217A61F42A4B900FABC1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F17217791F42A4B900FABC1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F17217801F42A4B900FABC1E;
+			remoteInfo = QingSongGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F17217811F42A4B900FABC1E /* QingSongGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QingSongGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17217851F42A4B900FABC1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F172178E1F42A4B900FABC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F17217901F42A4B900FABC1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F17217931F42A4B900FABC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F17217951F42A4B900FABC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F172179A1F42A4B900FABC1E /* QingSongGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QingSongGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F172179E1F42A4B900FABC1E /* QingSongGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QingSongGoTests.m; sourceTree = "<group>"; };
+		F17217A01F42A4B900FABC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17217A51F42A4B900FABC1E /* QingSongGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QingSongGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17217A91F42A4B900FABC1E /* QingSongGoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QingSongGoUITests.m; sourceTree = "<group>"; };
+		F17217AB1F42A4B900FABC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17217B81F42A52000FABC1E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F17217B91F42A52000FABC1E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F17217BA1F42A52000FABC1E /* FYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTabBarController.h; sourceTree = "<group>"; };
+		F17217BB1F42A52000FABC1E /* FYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTabBarController.m; sourceTree = "<group>"; };
+		F17217BD1F42A52000FABC1E /* FYBaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYBaseNavController.h; sourceTree = "<group>"; };
+		F17217BE1F42A52000FABC1E /* FYBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYBaseNavController.m; sourceTree = "<group>"; };
+		F17217C01F42A52000FABC1E /* FYClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYClassifyViewController.h; sourceTree = "<group>"; };
+		F17217C11F42A52000FABC1E /* FYClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYClassifyViewController.m; sourceTree = "<group>"; };
+		F17217C31F42A52000FABC1E /* FYDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDiscoveryViewController.h; sourceTree = "<group>"; };
+		F17217C41F42A52000FABC1E /* FYDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDiscoveryViewController.m; sourceTree = "<group>"; };
+		F17217C51F42A52000FABC1E /* FYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYColor.h; sourceTree = "<group>"; };
+		F17217C71F42A52000FABC1E /* FYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYHomeViewController.h; sourceTree = "<group>"; };
+		F17217C81F42A52000FABC1E /* FYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYHomeViewController.m; sourceTree = "<group>"; };
+		F17217CA1F42A52000FABC1E /* FYMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMineViewController.h; sourceTree = "<group>"; };
+		F17217CB1F42A52000FABC1E /* FYMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYMineViewController.m; sourceTree = "<group>"; };
+		F17217CE1F42A52000FABC1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F17217D81F42A5EC00FABC1E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F172177E1F42A4B900FABC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17217971F42A4B900FABC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17217A21F42A4B900FABC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F17217781F42A4B900FABC1E = {
+			isa = PBXGroup;
+			children = (
+				F17217831F42A4B900FABC1E /* QingSongGo */,
+				F172179D1F42A4B900FABC1E /* QingSongGoTests */,
+				F17217A81F42A4B900FABC1E /* QingSongGoUITests */,
+				F17217821F42A4B900FABC1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F17217821F42A4B900FABC1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F17217811F42A4B900FABC1E /* QingSongGo.app */,
+				F172179A1F42A4B900FABC1E /* QingSongGoTests.xctest */,
+				F17217A51F42A4B900FABC1E /* QingSongGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F17217831F42A4B900FABC1E /* QingSongGo */ = {
+			isa = PBXGroup;
+			children = (
+				F17217D71F42A5EC00FABC1E /* Macro */,
+				F17217B71F42A52000FABC1E /* AppDelegate */,
+				F17217BC1F42A52000FABC1E /* BaseClasses */,
+				F17217BF1F42A52000FABC1E /* Classify */,
+				F17217C21F42A52000FABC1E /* Discovery */,
+				F17217C51F42A52000FABC1E /* FYColor.h */,
+				F17217C61F42A52000FABC1E /* Home */,
+				F17217C91F42A52000FABC1E /* Mine */,
+				F17217CD1F42A52000FABC1E /* Resourece */,
+				F172178D1F42A4B900FABC1E /* Main.storyboard */,
+				F17217901F42A4B900FABC1E /* Assets.xcassets */,
+				F17217921F42A4B900FABC1E /* LaunchScreen.storyboard */,
+				F17217951F42A4B900FABC1E /* Info.plist */,
+				F17217841F42A4B900FABC1E /* Supporting Files */,
+			);
+			path = QingSongGo;
+			sourceTree = "<group>";
+		};
+		F17217841F42A4B900FABC1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F17217851F42A4B900FABC1E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F172179D1F42A4B900FABC1E /* QingSongGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F172179E1F42A4B900FABC1E /* QingSongGoTests.m */,
+				F17217A01F42A4B900FABC1E /* Info.plist */,
+			);
+			path = QingSongGoTests;
+			sourceTree = "<group>";
+		};
+		F17217A81F42A4B900FABC1E /* QingSongGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F17217A91F42A4B900FABC1E /* QingSongGoUITests.m */,
+				F17217AB1F42A4B900FABC1E /* Info.plist */,
+			);
+			path = QingSongGoUITests;
+			sourceTree = "<group>";
+		};
+		F17217B71F42A52000FABC1E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F17217B81F42A52000FABC1E /* AppDelegate.h */,
+				F17217B91F42A52000FABC1E /* AppDelegate.m */,
+				F17217BA1F42A52000FABC1E /* FYTabBarController.h */,
+				F17217BB1F42A52000FABC1E /* FYTabBarController.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F17217BC1F42A52000FABC1E /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F17217BD1F42A52000FABC1E /* FYBaseNavController.h */,
+				F17217BE1F42A52000FABC1E /* FYBaseNavController.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		F17217BF1F42A52000FABC1E /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				F17217C01F42A52000FABC1E /* FYClassifyViewController.h */,
+				F17217C11F42A52000FABC1E /* FYClassifyViewController.m */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		F17217C21F42A52000FABC1E /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				F17217C31F42A52000FABC1E /* FYDiscoveryViewController.h */,
+				F17217C41F42A52000FABC1E /* FYDiscoveryViewController.m */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		F17217C61F42A52000FABC1E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F17217C71F42A52000FABC1E /* FYHomeViewController.h */,
+				F17217C81F42A52000FABC1E /* FYHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F17217C91F42A52000FABC1E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F17217CA1F42A52000FABC1E /* FYMineViewController.h */,
+				F17217CB1F42A52000FABC1E /* FYMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F17217CD1F42A52000FABC1E /* Resourece */ = {
+			isa = PBXGroup;
+			children = (
+				F17217CE1F42A52000FABC1E /* Images.xcassets */,
+			);
+			path = Resourece;
+			sourceTree = "<group>";
+		};
+		F17217D71F42A5EC00FABC1E /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				F17217D81F42A5EC00FABC1E /* PrefixHeader.pch */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F17217801F42A4B900FABC1E /* QingSongGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17217AE1F42A4B900FABC1E /* Build configuration list for PBXNativeTarget "QingSongGo" */;
+			buildPhases = (
+				F172177D1F42A4B900FABC1E /* Sources */,
+				F172177E1F42A4B900FABC1E /* Frameworks */,
+				F172177F1F42A4B900FABC1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QingSongGo;
+			productName = QingSongGo;
+			productReference = F17217811F42A4B900FABC1E /* QingSongGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F17217991F42A4B900FABC1E /* QingSongGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17217B11F42A4B900FABC1E /* Build configuration list for PBXNativeTarget "QingSongGoTests" */;
+			buildPhases = (
+				F17217961F42A4B900FABC1E /* Sources */,
+				F17217971F42A4B900FABC1E /* Frameworks */,
+				F17217981F42A4B900FABC1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F172179C1F42A4B900FABC1E /* PBXTargetDependency */,
+			);
+			name = QingSongGoTests;
+			productName = QingSongGoTests;
+			productReference = F172179A1F42A4B900FABC1E /* QingSongGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F17217A41F42A4B900FABC1E /* QingSongGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17217B41F42A4B900FABC1E /* Build configuration list for PBXNativeTarget "QingSongGoUITests" */;
+			buildPhases = (
+				F17217A11F42A4B900FABC1E /* Sources */,
+				F17217A21F42A4B900FABC1E /* Frameworks */,
+				F17217A31F42A4B900FABC1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F17217A71F42A4B900FABC1E /* PBXTargetDependency */,
+			);
+			name = QingSongGoUITests;
+			productName = QingSongGoUITests;
+			productReference = F17217A51F42A4B900FABC1E /* QingSongGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F17217791F42A4B900FABC1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FY;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "方进";
+				TargetAttributes = {
+					F17217801F42A4B900FABC1E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					F17217991F42A4B900FABC1E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F17217801F42A4B900FABC1E;
+					};
+					F17217A41F42A4B900FABC1E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F17217801F42A4B900FABC1E;
+					};
+				};
+			};
+			buildConfigurationList = F172177C1F42A4B900FABC1E /* Build configuration list for PBXProject "QingSongGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F17217781F42A4B900FABC1E;
+			productRefGroup = F17217821F42A4B900FABC1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F17217801F42A4B900FABC1E /* QingSongGo */,
+				F17217991F42A4B900FABC1E /* QingSongGoTests */,
+				F17217A41F42A4B900FABC1E /* QingSongGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F172177F1F42A4B900FABC1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17217941F42A4B900FABC1E /* LaunchScreen.storyboard in Resources */,
+				F17217D61F42A52000FABC1E /* Images.xcassets in Resources */,
+				F17217911F42A4B900FABC1E /* Assets.xcassets in Resources */,
+				F172178F1F42A4B900FABC1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17217981F42A4B900FABC1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17217A31F42A4B900FABC1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F172177D1F42A4B900FABC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17217D51F42A52000FABC1E /* FYMineViewController.m in Sources */,
+				F17217CF1F42A52000FABC1E /* AppDelegate.m in Sources */,
+				F17217861F42A4B900FABC1E /* main.m in Sources */,
+				F17217D41F42A52000FABC1E /* FYHomeViewController.m in Sources */,
+				F17217D21F42A52000FABC1E /* FYClassifyViewController.m in Sources */,
+				F17217D01F42A52000FABC1E /* FYTabBarController.m in Sources */,
+				F17217D31F42A52000FABC1E /* FYDiscoveryViewController.m in Sources */,
+				F17217D11F42A52000FABC1E /* FYBaseNavController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17217961F42A4B900FABC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F172179F1F42A4B900FABC1E /* QingSongGoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17217A11F42A4B900FABC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17217AA1F42A4B900FABC1E /* QingSongGoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F172179C1F42A4B900FABC1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F17217801F42A4B900FABC1E /* QingSongGo */;
+			targetProxy = F172179B1F42A4B900FABC1E /* PBXContainerItemProxy */;
+		};
+		F17217A71F42A4B900FABC1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F17217801F42A4B900FABC1E /* QingSongGo */;
+			targetProxy = F17217A61F42A4B900FABC1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F172178D1F42A4B900FABC1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F172178E1F42A4B900FABC1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F17217921F42A4B900FABC1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17217931F42A4B900FABC1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F17217AC1F42A4B900FABC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F17217AD1F42A4B900FABC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F17217AF1F42A4B900FABC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QingSongGo/Macro/PrefixHeader.pch";
+				INFOPLIST_FILE = QingSongGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F17217B01F42A4B900FABC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QingSongGo/Macro/PrefixHeader.pch";
+				INFOPLIST_FILE = QingSongGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F17217B21F42A4B900FABC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QingSongGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QingSongGo.app/QingSongGo";
+			};
+			name = Debug;
+		};
+		F17217B31F42A4B900FABC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QingSongGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QingSongGo.app/QingSongGo";
+			};
+			name = Release;
+		};
+		F17217B51F42A4B900FABC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QingSongGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QingSongGo;
+			};
+			name = Debug;
+		};
+		F17217B61F42A4B900FABC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QingSongGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QingSongGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F172177C1F42A4B900FABC1E /* Build configuration list for PBXProject "QingSongGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17217AC1F42A4B900FABC1E /* Debug */,
+				F17217AD1F42A4B900FABC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17217AE1F42A4B900FABC1E /* Build configuration list for PBXNativeTarget "QingSongGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17217AF1F42A4B900FABC1E /* Debug */,
+				F17217B01F42A4B900FABC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F17217B11F42A4B900FABC1E /* Build configuration list for PBXNativeTarget "QingSongGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17217B21F42A4B900FABC1E /* Debug */,
+				F17217B31F42A4B900FABC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F17217B41F42A4B900FABC1E /* Build configuration list for PBXNativeTarget "QingSongGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17217B51F42A4B900FABC1E /* Debug */,
+				F17217B61F42A4B900FABC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F17217791F42A4B900FABC1E /* Project object */;
+}
