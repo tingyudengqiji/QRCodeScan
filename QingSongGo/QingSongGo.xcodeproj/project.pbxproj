@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F16217FC1F42DD1F00ED1F15 /* FYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16217FB1F42DD1F00ED1F15 /* FYScrollView.m */; };
+		F16218031F42F6E600ED1F15 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16217FE1F42F6E600ED1F15 /* 1.jpg */; };
+		F16218041F42F6E600ED1F15 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16217FF1F42F6E600ED1F15 /* 2.jpg */; };
+		F16218051F42F6E600ED1F15 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16218001F42F6E600ED1F15 /* 3.jpg */; };
+		F16218061F42F6E600ED1F15 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16218011F42F6E600ED1F15 /* 4.jpg */; };
+		F16218071F42F6E600ED1F15 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16218021F42F6E600ED1F15 /* 5.jpg */; };
 		F17217861F42A4B900FABC1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217851F42A4B900FABC1E /* main.m */; };
 		F172178F1F42A4B900FABC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F172178D1F42A4B900FABC1E /* Main.storyboard */; };
 		F17217911F42A4B900FABC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17217901F42A4B900FABC1E /* Assets.xcassets */; };
@@ -41,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F16217FA1F42DD1F00ED1F15 /* FYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYScrollView.h; sourceTree = "<group>"; };
+		F16217FB1F42DD1F00ED1F15 /* FYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYScrollView.m; sourceTree = "<group>"; };
+		F16217FE1F42F6E600ED1F15 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F16217FF1F42F6E600ED1F15 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		F16218001F42F6E600ED1F15 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		F16218011F42F6E600ED1F15 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		F16218021F42F6E600ED1F15 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		F17217811F42A4B900FABC1E /* QingSongGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QingSongGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17217851F42A4B900FABC1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F172178E1F42A4B900FABC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +110,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F16217F91F42DCC900ED1F15 /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F16217FD1F42F6E600ED1F15 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F16217FE1F42F6E600ED1F15 /* 1.jpg */,
+				F16217FF1F42F6E600ED1F15 /* 2.jpg */,
+				F16218001F42F6E600ED1F15 /* 3.jpg */,
+				F16218011F42F6E600ED1F15 /* 4.jpg */,
+				F16218021F42F6E600ED1F15 /* 5.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		F17217781F42A4B900FABC1E = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +152,7 @@
 		F17217831F42A4B900FABC1E /* QingSongGo */ = {
 			isa = PBXGroup;
 			children = (
+				F16217F91F42DCC900ED1F15 /* common */,
 				F17217D71F42A5EC00FABC1E /* Macro */,
 				F17217B71F42A52000FABC1E /* AppDelegate */,
 				F17217BC1F42A52000FABC1E /* BaseClasses */,
@@ -180,6 +213,8 @@
 			children = (
 				F17217BD1F42A52000FABC1E /* FYBaseNavController.h */,
 				F17217BE1F42A52000FABC1E /* FYBaseNavController.m */,
+				F16217FA1F42DD1F00ED1F15 /* FYScrollView.h */,
+				F16217FB1F42DD1F00ED1F15 /* FYScrollView.m */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -223,6 +258,7 @@
 		F17217CD1F42A52000FABC1E /* Resourece */ = {
 			isa = PBXGroup;
 			children = (
+				F16217FD1F42F6E600ED1F15 /* images */,
 				F17217CE1F42A52000FABC1E /* Images.xcassets */,
 			);
 			path = Resourece;
@@ -343,10 +379,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16218061F42F6E600ED1F15 /* 4.jpg in Resources */,
+				F16218041F42F6E600ED1F15 /* 2.jpg in Resources */,
 				F17217941F42A4B900FABC1E /* LaunchScreen.storyboard in Resources */,
+				F16218071F42F6E600ED1F15 /* 5.jpg in Resources */,
 				F17217D61F42A52000FABC1E /* Images.xcassets in Resources */,
 				F17217911F42A4B900FABC1E /* Assets.xcassets in Resources */,
 				F172178F1F42A4B900FABC1E /* Main.storyboard in Resources */,
+				F16218051F42F6E600ED1F15 /* 3.jpg in Resources */,
+				F16218031F42F6E600ED1F15 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F17217D51F42A52000FABC1E /* FYMineViewController.m in Sources */,
+				F16217FC1F42DD1F00ED1F15 /* FYScrollView.m in Sources */,
 				F17217CF1F42A52000FABC1E /* AppDelegate.m in Sources */,
 				F17217861F42A4B900FABC1E /* main.m in Sources */,
 				F17217D41F42A52000FABC1E /* FYHomeViewController.m in Sources */,
@@ -616,6 +658,7 @@
 				F17217B01F42A4B900FABC1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F17217B11F42A4B900FABC1E /* Build configuration list for PBXNativeTarget "QingSongGoTests" */ = {
 			isa = XCConfigurationList;
@@ -624,6 +667,7 @@
 				F17217B31F42A4B900FABC1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F17217B41F42A4B900FABC1E /* Build configuration list for PBXNativeTarget "QingSongGoUITests" */ = {
 			isa = XCConfigurationList;
@@ -632,6 +676,7 @@
 				F17217B61F42A4B900FABC1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
