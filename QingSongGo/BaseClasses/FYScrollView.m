@@ -58,19 +58,7 @@
     _pageCount = imagesArray.count;
     _scrollView.contentSize = CGSizeMake(3*CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
     _pageControl.numberOfPages = _pageCount;
-//    
-//    CGSize size = _scrollView.frame.size;
-//    for (int i = 0; i < _pageCount; i++) {
-//        UIImageView *iconView = [[UIImageView alloc] init];
-//        [self.scrollView addSubview:iconView];
-//        iconView.image = _imagesArr[i];
-//        
-//        CGFloat x = i * size.width;
-//        //frame
-//        iconView.frame = CGRectMake(x, 0, size.width, size.height);
-//        
-//    }
-    
+
     for (int i = 0; i < 3; i ++) {
         UIImageView *page = [[UIImageView alloc]init];
         page.frame = CGRectMake(self.frame.size.width*i, 0, self.frame.size.width, self.frame.size.height);
@@ -92,14 +80,10 @@
      [self addTimer];
 }
 
-
+//添加定时器
 -(void)addTimer{
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:2
-                                     target:self
-                                   selector:@selector(nextPage)
-                                   userInfo:nil
-                                    repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
 }
 
 -(void)nextPage{
@@ -112,13 +96,60 @@
     {
         _pageControl.currentPage = _pageIndex + 1;
     }
+    _pageIndex = _pageControl.currentPage;
+}
+
+#pragma mark --UIScrollViewDelegate
+
+//开始拖拽视图时
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [_timer invalidate];
+    _timer = nil;
+}
+
+//手动拖拽结束时
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    if (scrollView.contentOffset.x > self.frame.size.width) {
+        [self resetPageIndex:YES];
+    }else{
+        [self resetPageIndex:NO];
+    }
     
+    [self resetPageView];
+    [self addTimer];
+}
+
+
+
+// 当滚动视图动画完成后，调用该方法，如果没有动画，那么该方法将不被调用
+-(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+    [self resetPageView];
+}
+
+-(void)resetPageIndex:(BOOL)isRight{
+    if (isRight) {
+        if (_pageIndex == _pageCount - 1)
+        {
+            _pageControl.currentPage = 0;
+        }
+        else
+        {
+            _pageControl.currentPage = _pageIndex + 1;
+        }
+    }
+    else{
+        if (_pageIndex == 0) {
+            _pageControl.currentPage = _pageCount - 1;
+        }
+        else{
+            _pageControl.currentPage = _pageIndex - 1;
+        }
+    }
     _pageIndex = _pageControl.currentPage;
 
-
 }
-//正在滚动的时候
--(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+
+-(void)resetPageView{
     if (_pageControl.currentPage == _pageCount-1) {
         _leftPageView.image = _imagesArr[_pageControl.currentPage-1];
         _middlePageView.image = _imagesArr[_pageControl.currentPage];
@@ -136,6 +167,7 @@
     }
     // 重新设置偏移量
     _scrollView.contentOffset = CGPointMake(self.frame.size.width, 0);
+
 }
 
 
