@@ -25,6 +25,7 @@
     _imgaesArray = @[@"page 1", @"page 2", @"page3", @"page 4", @"page 5"];
     _scrollView = [[FYScrollView alloc]initWithFrame:CGRectMake(0,64, ScreenWidth, 200)];
     [self.view addSubview:_scrollView];
+    self.automaticallyAdjustsScrollViewInsets = NO;//解决ScrollView中的子视图VIew自动下移了64个像素.
     [self setScrollView];
     
 }
