@@ -149,6 +149,7 @@
 
 }
 
+//重新加载pageview
 -(void)resetPageView{
     if (_pageControl.currentPage == _pageCount-1) {
         _leftPageView.image = _imagesArr[_pageControl.currentPage-1];

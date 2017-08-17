@@ -23,12 +23,22 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor colorWithRed:224.0/255.0 green:224.0/255.0 blue:224.0/255.0 alpha:1]];
     _imgaesArray = @[@"page 1", @"page 2", @"page3", @"page 4", @"page 5"];
-    _scrollView = [[FYScrollView alloc]initWithFrame:CGRectMake(0,64, ScreenWidth, 200)];
+    _scrollView = [[FYScrollView alloc]initWithFrame:CGRectMake(0,64, ScreenWidth, 180)];
     [self.view addSubview:_scrollView];
     self.automaticallyAdjustsScrollViewInsets = NO;//解决ScrollView中的子视图VIew自动下移了64个像素.
+    [self setNavButton];
     [self setScrollView];
     
 }
+
+-(void)setNavButton{
+    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImageName:@"saoma.png" highImageName:@"" target:self action:@selector(scanButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
+    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithImageName:@"msg.png" highImageName:@"" target:self action:@selector(showMessage:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
 
 -(void)setScrollView{
     NSMutableArray *imgArray = [NSMutableArray new];
@@ -39,6 +49,21 @@
     [_scrollView setupSubViewPages:imgArray withCallBackBlock:^{
         
     }];
+}
+
+//扫一扫
+-(void)scanButtonAction{
+    UIAlertController *alterContr = [UIAlertController alertControllerWithTitle:@"标题" message:@"点击了扫一扫" preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+    [alterContr addAction:cancelAction];
+    [alterContr addAction:okAction];
+    [self presentViewController:alterContr animated:YES completion:nil];
+}
+
+-(void)showMessage:(id)sender{
+    
 }
 
 - (void)didReceiveMemoryWarning {

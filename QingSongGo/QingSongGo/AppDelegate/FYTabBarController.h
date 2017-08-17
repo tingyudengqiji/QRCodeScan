@@ -10,4 +10,6 @@
 
 @interface FYTabBarController : UITabBarController
 
+-(void)setLeftButton:(NSString *)imageName;
+
 @end
