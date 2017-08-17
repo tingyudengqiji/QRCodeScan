@@ -54,6 +54,19 @@
     }];
 }
 
+-(void)setLeftButton:(NSString *)imageName{
+    UIButton *leftButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 25, 25)];
+    [leftButton addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [leftButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
+    self.navigationItem.leftBarButtonItem = leftItem;
+}
+
+-(void)leftButtonAction:(id)sender{
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
