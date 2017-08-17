@@ -24,10 +24,12 @@
 		F17217D11F42A52000FABC1E /* FYBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217BE1F42A52000FABC1E /* FYBaseNavController.m */; };
 		F17217D21F42A52000FABC1E /* FYClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217C11F42A52000FABC1E /* FYClassifyViewController.m */; };
 		F17217D31F42A52000FABC1E /* FYDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217C41F42A52000FABC1E /* FYDiscoveryViewController.m */; };
-		F17217D41F42A52000FABC1E /* FYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217C81F42A52000FABC1E /* FYHomeViewController.m */; };
 		F17217D51F42A52000FABC1E /* FYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217CB1F42A52000FABC1E /* FYMineViewController.m */; };
 		F17217D61F42A52000FABC1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17217CE1F42A52000FABC1E /* Images.xcassets */; };
 		F1A5883C1F45345200611DE8 /* UIBarButtonItem+FYCateory.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A5883B1F45345200611DE8 /* UIBarButtonItem+FYCateory.m */; };
+		F1A5883F1F4567E100611DE8 /* FYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A5883E1F4567E100611DE8 /* FYCollectionViewController.m */; };
+		F1A588451F457D7E00611DE8 /* FYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A588421F457D7E00611DE8 /* FYHomeViewController.m */; };
+		F1A588481F457DB900611DE8 /* FYHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A588471F457DB900611DE8 /* FYHomeCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,14 +79,18 @@
 		F17217C11F42A52000FABC1E /* FYClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYClassifyViewController.m; sourceTree = "<group>"; };
 		F17217C31F42A52000FABC1E /* FYDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDiscoveryViewController.h; sourceTree = "<group>"; };
 		F17217C41F42A52000FABC1E /* FYDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDiscoveryViewController.m; sourceTree = "<group>"; };
-		F17217C71F42A52000FABC1E /* FYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYHomeViewController.h; sourceTree = "<group>"; };
-		F17217C81F42A52000FABC1E /* FYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYHomeViewController.m; sourceTree = "<group>"; };
 		F17217CA1F42A52000FABC1E /* FYMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMineViewController.h; sourceTree = "<group>"; };
 		F17217CB1F42A52000FABC1E /* FYMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYMineViewController.m; sourceTree = "<group>"; };
 		F17217CE1F42A52000FABC1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F17217D81F42A5EC00FABC1E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F1A5883A1F45345200611DE8 /* UIBarButtonItem+FYCateory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FYCateory.h"; sourceTree = "<group>"; };
 		F1A5883B1F45345200611DE8 /* UIBarButtonItem+FYCateory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FYCateory.m"; sourceTree = "<group>"; };
+		F1A5883D1F4567E100611DE8 /* FYCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYCollectionViewController.h; sourceTree = "<group>"; };
+		F1A5883E1F4567E100611DE8 /* FYCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYCollectionViewController.m; sourceTree = "<group>"; };
+		F1A588411F457D7E00611DE8 /* FYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYHomeViewController.h; sourceTree = "<group>"; };
+		F1A588421F457D7E00611DE8 /* FYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYHomeViewController.m; sourceTree = "<group>"; };
+		F1A588461F457DB900611DE8 /* FYHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		F1A588471F457DB900611DE8 /* FYHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYHomeCollectionViewCell.m; sourceTree = "<group>"; };
 		F1A73E3B1F43E47F00609190 /* FYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYColor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +122,8 @@
 		F16217F91F42DCC900ED1F15 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F1A5883D1F4567E100611DE8 /* FYCollectionViewController.h */,
+				F1A5883E1F4567E100611DE8 /* FYCollectionViewController.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -243,8 +251,9 @@
 		F17217C61F42A52000FABC1E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F17217C71F42A52000FABC1E /* FYHomeViewController.h */,
-				F17217C81F42A52000FABC1E /* FYHomeViewController.m */,
+				F1A588401F457D7E00611DE8 /* Controller */,
+				F1A588431F457D7E00611DE8 /* Mode */,
+				F1A588441F457D7E00611DE8 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -283,6 +292,31 @@
 				F1A5883B1F45345200611DE8 /* UIBarButtonItem+FYCateory.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		F1A588401F457D7E00611DE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1A588411F457D7E00611DE8 /* FYHomeViewController.h */,
+				F1A588421F457D7E00611DE8 /* FYHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1A588431F457D7E00611DE8 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		F1A588441F457D7E00611DE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1A588461F457DB900611DE8 /* FYHomeCollectionViewCell.h */,
+				F1A588471F457DB900611DE8 /* FYHomeCollectionViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,16 +459,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A588481F457DB900611DE8 /* FYHomeCollectionViewCell.m in Sources */,
 				F17217D51F42A52000FABC1E /* FYMineViewController.m in Sources */,
 				F16217FC1F42DD1F00ED1F15 /* FYScrollView.m in Sources */,
 				F17217CF1F42A52000FABC1E /* AppDelegate.m in Sources */,
 				F1A5883C1F45345200611DE8 /* UIBarButtonItem+FYCateory.m in Sources */,
 				F17217861F42A4B900FABC1E /* main.m in Sources */,
-				F17217D41F42A52000FABC1E /* FYHomeViewController.m in Sources */,
 				F17217D21F42A52000FABC1E /* FYClassifyViewController.m in Sources */,
 				F17217D01F42A52000FABC1E /* FYTabBarController.m in Sources */,
 				F17217D31F42A52000FABC1E /* FYDiscoveryViewController.m in Sources */,
 				F17217D11F42A52000FABC1E /* FYBaseNavController.m in Sources */,
+				F1A588451F457D7E00611DE8 /* FYHomeViewController.m in Sources */,
+				F1A5883F1F4567E100611DE8 /* FYCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
