@@ -28,7 +28,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;//解决ScrollView中的子视图VIew自动下移了64个像素.
     [self setNavButton];
     [self setScrollView];
-    
+    [self setColletionView];
 }
 
 -(void)setNavButton{
@@ -49,6 +49,10 @@
     [_scrollView setupSubViewPages:imgArray withCallBackBlock:^{
         
     }];
+}
+
+-(void)setColletionView{
+    
 }
 
 //扫一扫
