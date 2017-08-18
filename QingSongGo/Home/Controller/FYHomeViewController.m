@@ -41,7 +41,9 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 -(void)setTableView{
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64,ScreenWidth, ScreenHeight-64) style:UITableViewStylePlain];
+    //其中49是tabbar的高度
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64,ScreenWidth, ScreenHeight-64-49) style:UITableViewStylePlain];
+
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"detailCell"];
     _tableView.backgroundColor = [UIColor colorWithRed:224.0/255.0 green:224.0/255.0 blue:224.0/255.0 alpha:1];
     _tableView.delegate = self;
