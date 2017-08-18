@@ -30,6 +30,7 @@
 		F1A5884E1F45992B00611DE8 /* FYClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A5884B1F45992B00611DE8 /* FYClassifyViewController.m */; };
 		F1A588541F45997200611DE8 /* FYDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A588511F45997200611DE8 /* FYDiscoveryViewController.m */; };
 		F1A5885A1F45999900611DE8 /* FYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A588571F45999900611DE8 /* FYMineViewController.m */; };
+		F1EB3B911F46794F007E8777 /* FYMyHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EB3B901F46794E007E8777 /* FYMyHeadTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		F1A588561F45999900611DE8 /* FYMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMineViewController.h; sourceTree = "<group>"; };
 		F1A588571F45999900611DE8 /* FYMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYMineViewController.m; sourceTree = "<group>"; };
 		F1A73E3B1F43E47F00609190 /* FYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYColor.h; sourceTree = "<group>"; };
+		F1EB3B8F1F46794E007E8777 /* FYMyHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMyHeadTableViewCell.h; sourceTree = "<group>"; };
+		F1EB3B901F46794E007E8777 /* FYMyHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYMyHeadTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +390,8 @@
 		F1A588591F45999900611DE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F1EB3B8F1F46794E007E8777 /* FYMyHeadTableViewCell.h */,
+				F1EB3B901F46794E007E8777 /* FYMyHeadTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,15 +464,18 @@
 				TargetAttributes = {
 					F17217801F42A4B900FABC1E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P23F4YUGET;
 						ProvisioningStyle = Automatic;
 					};
 					F17217991F42A4B900FABC1E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P23F4YUGET;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F17217801F42A4B900FABC1E;
 					};
 					F17217A41F42A4B900FABC1E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P23F4YUGET;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F17217801F42A4B900FABC1E;
 					};
@@ -542,6 +550,7 @@
 				F17217D01F42A52000FABC1E /* FYTabBarController.m in Sources */,
 				F17217D11F42A52000FABC1E /* FYBaseNavController.m in Sources */,
 				F1A588451F457D7E00611DE8 /* FYHomeViewController.m in Sources */,
+				F1EB3B911F46794F007E8777 /* FYMyHeadTableViewCell.m in Sources */,
 				F1A5883F1F4567E100611DE8 /* FYCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,9 +628,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: weiling ji (MB7T9N9L2X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: weiling ji (MB7T9N9L2X)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P23F4YUGET;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -668,9 +679,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: weiling ji (MB7T9N9L2X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: weiling ji (MB7T9N9L2X)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = P23F4YUGET;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -693,12 +706,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P23F4YUGET;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QingSongGo/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = QingSongGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -706,12 +724,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P23F4YUGET;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QingSongGo/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = QingSongGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -721,7 +744,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QingSongGoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "    com.maojinsuo.bmgj10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QingSongGo.app/QingSongGo";
 			};
@@ -733,7 +756,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QingSongGoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.test.QingSongGoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "    com.maojinsuo.bmgj10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QingSongGo.app/QingSongGo";
 			};
