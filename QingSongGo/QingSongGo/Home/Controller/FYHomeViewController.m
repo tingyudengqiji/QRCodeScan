@@ -134,6 +134,7 @@ static NSString * const reuseIdentifier = @"Cell";
         cell.selectedBackgroundView = backView;
   
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
