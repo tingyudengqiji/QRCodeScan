@@ -1,0 +1,64 @@
+//
+//  FYMyHeadTableViewCell.m
+//  QingSongGo
+//
+//  Created by 方进 on 2017/8/18.
+//  Copyright © 2017年 方进. All rights reserved.
+//
+
+#import "FYMyHeadTableViewCell.h"
+
+@implementation FYMyHeadTableViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+   
+}
+
+-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
+        _headImg = [[UIImageView alloc]initWithFrame:CGRectMake(40,50, 50, 50)];
+        _headImg.layer.cornerRadius = 25;
+        _headImg.layer.masksToBounds = YES;
+        _headImg.clipsToBounds = YES;
+        _headImg.image = [UIImage imageNamed:@"myHead"];
+        [_headImg setUserInteractionEnabled:YES];
+        UITapGestureRecognizer *singelTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(chooseHeadIcon:)];
+        [_headImg addGestureRecognizer:singelTap];
+        
+
+        _nameLbl = [[UILabel alloc]initWithFrame:CGRectMake(_headImg.frame.origin.x+_headImg.frame.size.width + 10, _headImg.frame.origin.y, 100, 20)];
+        _nameLbl.textColor = [UIColor whiteColor];
+        _nameLbl.font = [UIFont systemFontOfSize:16];
+        _nameLbl.text = @"听雨等奇迹";
+        
+        _infoLbl = [[UILabel alloc]initWithFrame:CGRectMake(_headImg.frame.origin.x+_headImg.frame.size.width + 10, _nameLbl.frame.origin.y+_nameLbl.frame.size.height+5, 100, 20)];
+        _infoLbl.textColor = [UIColor whiteColor];
+        _infoLbl.font = [UIFont systemFontOfSize:13];
+        _infoLbl.text = @"雨迹";
+        [self.contentView addSubview:_headImg];
+        [self.contentView addSubview:_nameLbl];
+        [self.contentView addSubview:_infoLbl];
+    }
+    return self;
+}
+
+-(void)chooseHeadIcon:(UITapGestureRecognizer *)gestureRecognizer{
+    if(_delegate &&[_delegate respondsToSelector:@selector(touchHeadImg:)])
+    {
+        [_delegate touchHeadImg:self];
+    }
+}
+
+-(void)creatUIWithMode:(NSDictionary*)dic{
+   
+}
+
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end
