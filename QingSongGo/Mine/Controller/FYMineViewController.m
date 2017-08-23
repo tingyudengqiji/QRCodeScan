@@ -8,6 +8,7 @@
 
 #import "FYMineViewController.h"
 #import "FYMyHeadTableViewCell.h"
+#import "FYEditMyinfoViewController.h"
 
 @interface FYMineViewController ()<UITableViewDelegate,UITableViewDataSource,FYHeadCellDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -25,13 +26,17 @@ static NSString * const ReuseIdentifier = @"detailCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor colorWithRed:224.0/255.0 green:224.0/255.0 blue:224.0/255.0 alpha:1]];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
     [self setTableView];
     _imagePickerController = [[UIImagePickerController alloc]init];
     _imagePickerController.delegate = self;
     _imagePickerController.allowsEditing = YES;
-    
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
 -(void)setTableView{
     _myTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     _myTableView.delegate = self;
@@ -90,6 +95,12 @@ static NSString * const ReuseIdentifier = @"detailCell";
 #pragma mark <UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.section == 0){
+        FYEditMyinfoViewController *editVC = [[FYEditMyinfoViewController alloc]init];
+        [self.navigationController pushViewController:editVC animated:YES];
+      
+
+    }
 
 }
 
@@ -142,8 +153,6 @@ static NSString * const ReuseIdentifier = @"detailCell";
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
     FYMyHeadTableViewCell *headCell = (FYMyHeadTableViewCell*)[self.view viewWithTag:1000];
-//    UIImageView *imgView = (UIImageView *)[headCell.headImg viewWithTag:1000];
-//    
     UIImage * originalImage  = info[UIImagePickerControllerOriginalImage];
     UIImage * editedImg = info[UIImagePickerControllerEditedImage];
     NSURL   * mediaUrl  = info[UIImagePickerControllerMediaURL];
