@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1327D0D1F4D4C7600A3DED4 /* FYEditMyinfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1327D0C1F4D4C7600A3DED4 /* FYEditMyinfoViewController.m */; };
+		F1327D0F1F4D557100A3DED4 /* iconfont-fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = F1327D0E1F4D557100A3DED4 /* iconfont-fanhui.png */; };
+		F1327D121F4D717C00A3DED4 /* FYInfoHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1327D111F4D717C00A3DED4 /* FYInfoHeadTableViewCell.m */; };
+		F1327D151F4D7A6100A3DED4 /* FYEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1327D141F4D7A6100A3DED4 /* FYEditTableViewCell.m */; };
 		F16217FC1F42DD1F00ED1F15 /* FYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16217FB1F42DD1F00ED1F15 /* FYScrollView.m */; };
 		F16218031F42F6E600ED1F15 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16217FE1F42F6E600ED1F15 /* 1.jpg */; };
 		F16218041F42F6E600ED1F15 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16217FF1F42F6E600ED1F15 /* 2.jpg */; };
@@ -52,6 +56,13 @@
 
 /* Begin PBXFileReference section */
 		F1327D091F4D168B00A3DED4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		F1327D0B1F4D4C7600A3DED4 /* FYEditMyinfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYEditMyinfoViewController.h; sourceTree = "<group>"; };
+		F1327D0C1F4D4C7600A3DED4 /* FYEditMyinfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYEditMyinfoViewController.m; sourceTree = "<group>"; };
+		F1327D0E1F4D557100A3DED4 /* iconfont-fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-fanhui.png"; sourceTree = "<group>"; };
+		F1327D101F4D717C00A3DED4 /* FYInfoHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYInfoHeadTableViewCell.h; sourceTree = "<group>"; };
+		F1327D111F4D717C00A3DED4 /* FYInfoHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYInfoHeadTableViewCell.m; sourceTree = "<group>"; };
+		F1327D131F4D7A6100A3DED4 /* FYEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYEditTableViewCell.h; sourceTree = "<group>"; };
+		F1327D141F4D7A6100A3DED4 /* FYEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYEditTableViewCell.m; sourceTree = "<group>"; };
 		F16217FA1F42DD1F00ED1F15 /* FYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYScrollView.h; sourceTree = "<group>"; };
 		F16217FB1F42DD1F00ED1F15 /* FYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYScrollView.m; sourceTree = "<group>"; };
 		F16217FE1F42F6E600ED1F15 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -143,6 +154,7 @@
 		F16217FD1F42F6E600ED1F15 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F1327D0E1F4D557100A3DED4 /* iconfont-fanhui.png */,
 				F16217FE1F42F6E600ED1F15 /* 1.jpg */,
 				F16217FF1F42F6E600ED1F15 /* 2.jpg */,
 				F16218001F42F6E600ED1F15 /* 3.jpg */,
@@ -386,6 +398,8 @@
 			children = (
 				F1A588561F45999900611DE8 /* FYMineViewController.h */,
 				F1A588571F45999900611DE8 /* FYMineViewController.m */,
+				F1327D0B1F4D4C7600A3DED4 /* FYEditMyinfoViewController.h */,
+				F1327D0C1F4D4C7600A3DED4 /* FYEditMyinfoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -402,6 +416,10 @@
 			children = (
 				F1EB3B8F1F46794E007E8777 /* FYMyHeadTableViewCell.h */,
 				F1EB3B901F46794E007E8777 /* FYMyHeadTableViewCell.m */,
+				F1327D101F4D717C00A3DED4 /* FYInfoHeadTableViewCell.h */,
+				F1327D111F4D717C00A3DED4 /* FYInfoHeadTableViewCell.m */,
+				F1327D131F4D7A6100A3DED4 /* FYEditTableViewCell.h */,
+				F1327D141F4D7A6100A3DED4 /* FYEditTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -520,6 +538,7 @@
 				F16218041F42F6E600ED1F15 /* 2.jpg in Resources */,
 				F17217941F42A4B900FABC1E /* LaunchScreen.storyboard in Resources */,
 				F16218071F42F6E600ED1F15 /* 5.jpg in Resources */,
+				F1327D0F1F4D557100A3DED4 /* iconfont-fanhui.png in Resources */,
 				F17217D61F42A52000FABC1E /* Images.xcassets in Resources */,
 				F17217911F42A4B900FABC1E /* Assets.xcassets in Resources */,
 				F172178F1F42A4B900FABC1E /* Main.storyboard in Resources */,
@@ -550,16 +569,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A588481F457DB900611DE8 /* FYHomeCollectionViewCell.m in Sources */,
+				F1327D121F4D717C00A3DED4 /* FYInfoHeadTableViewCell.m in Sources */,
 				F16217FC1F42DD1F00ED1F15 /* FYScrollView.m in Sources */,
 				F17217CF1F42A52000FABC1E /* AppDelegate.m in Sources */,
 				F1A588541F45997200611DE8 /* FYDiscoveryViewController.m in Sources */,
 				F1A5885A1F45999900611DE8 /* FYMineViewController.m in Sources */,
 				F1A5883C1F45345200611DE8 /* UIBarButtonItem+FYCateory.m in Sources */,
 				F1A5884E1F45992B00611DE8 /* FYClassifyViewController.m in Sources */,
+				F1327D151F4D7A6100A3DED4 /* FYEditTableViewCell.m in Sources */,
 				F17217861F42A4B900FABC1E /* main.m in Sources */,
 				F17217D01F42A52000FABC1E /* FYTabBarController.m in Sources */,
 				F17217D11F42A52000FABC1E /* FYBaseNavController.m in Sources */,
 				F1A588451F457D7E00611DE8 /* FYHomeViewController.m in Sources */,
+				F1327D0D1F4D4C7600A3DED4 /* FYEditMyinfoViewController.m in Sources */,
 				F1EB3B911F46794F007E8777 /* FYMyHeadTableViewCell.m in Sources */,
 				F1A5883F1F4567E100611DE8 /* FYCollectionViewController.m in Sources */,
 			);
