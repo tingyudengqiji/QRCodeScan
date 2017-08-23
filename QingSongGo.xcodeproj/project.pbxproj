@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1327D091F4D168B00A3DED4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		F16217FA1F42DD1F00ED1F15 /* FYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYScrollView.h; sourceTree = "<group>"; };
 		F16217FB1F42DD1F00ED1F15 /* FYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYScrollView.m; sourceTree = "<group>"; };
 		F16217FE1F42F6E600ED1F15 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -122,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1327D081F4D168B00A3DED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1327D091F4D168B00A3DED4 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F16217F91F42DCC900ED1F15 /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +159,7 @@
 				F172179D1F42A4B900FABC1E /* QingSongGoTests */,
 				F17217A81F42A4B900FABC1E /* QingSongGoUITests */,
 				F17217821F42A4B900FABC1E /* Products */,
+				F1327D081F4D168B00A3DED4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

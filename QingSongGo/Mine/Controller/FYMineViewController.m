@@ -29,6 +29,7 @@ static NSString * const ReuseIdentifier = @"detailCell";
     [self setTableView];
     _imagePickerController = [[UIImagePickerController alloc]init];
     _imagePickerController.delegate = self;
+    _imagePickerController.allowsEditing = YES;
     
 }
 -(void)setTableView{
@@ -57,6 +58,7 @@ static NSString * const ReuseIdentifier = @"detailCell";
     
     if (indexPath.section == 0) {
         FYMyHeadTableViewCell *headCell = [_myTableView dequeueReusableCellWithIdentifier:headReuseIdentifier forIndexPath:indexPath];
+        headCell.tag = 1000;
         headCell.backgroundColor = headColor;
         NSDictionary *dic = @{@"name":@"听雨等奇迹",@"info":@"雨迹"};
         headCell.accessoryType = UITableViewCellAccessoryNone;
@@ -88,14 +90,7 @@ static NSString * const ReuseIdentifier = @"detailCell";
 #pragma mark <UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    NSString *str = [NSString stringWithFormat:@"您点击了tableView%ld",(long)indexPath.item];
-//    UIAlertController *alterContr = [UIAlertController alertControllerWithTitle:@"标题" message:str preferredStyle:UIAlertControllerStyleAlert];
-//    
-//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
-//    [alterContr addAction:cancelAction];
-//    [alterContr addAction:okAction];
-//    [self presentViewController:alterContr animated:YES completion:nil];
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -127,8 +122,51 @@ static NSString * const ReuseIdentifier = @"detailCell";
     [pictureCtr addAction:cancel];
     [self presentViewController:pictureCtr animated:NO completion:nil];
 }
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo{
+
+#pragma mark - 保存图片至沙盒
+//- (void) saveImage:(UIImage *)currentImage withName:(NSString *)imageName
+//{
+//    
+//    NSData *imageData = UIImageJPEGRepresentation(currentImage, 0.5);
+//    // 获取沙盒目录
+//    
+//    NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:imageName];
+//    
+//    // 将图片写入文件
+//    
+//    [imageData writeToFile:fullPath atomically:NO];
+//}
+
+#pragma mark - image picker delegte
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    FYMyHeadTableViewCell *headCell = (FYMyHeadTableViewCell*)[self.view viewWithTag:1000];
+//    UIImageView *imgView = (UIImageView *)[headCell.headImg viewWithTag:1000];
+//    
+    UIImage * originalImage  = info[UIImagePickerControllerOriginalImage];
+    UIImage * editedImg = info[UIImagePickerControllerEditedImage];
+    NSURL   * mediaUrl  = info[UIImagePickerControllerMediaURL];
+    //选中图片进行了裁剪
+    if (editedImg) {
+       headCell.headImg.image = editedImg;
+    }
+    else if(originalImage){
+        //没有对图片进行裁剪
+        headCell.headImg.image = originalImage;
+    }
+    //如果选中的是视频
+    if (mediaUrl) {
+      
+    }
     [picker dismissViewControllerAnimated:YES completion:^{}];
+}
+
+//当用户选取完成后调用；
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:^{}];
+    
 }
 
 - (void)didReceiveMemoryWarning {
