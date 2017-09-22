@@ -12,11 +12,13 @@
 @protocol FYHeadCellDelegate <NSObject>
 
 - (void)touchHeadImg:(FYMyHeadTableViewCell *)cell;
+- (void)jumpLogin:(UIButton*)btn;
 
 @end
 
 @interface FYMyHeadTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UIButton *setUpBtn;
 @property (nonatomic, strong) UIImageView *headImg;//头像
 @property (nonatomic, strong) UILabel *nameLbl;//登录人姓名
 @property (nonatomic, strong) UILabel *infoLbl;//登录人信息
