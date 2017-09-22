@@ -17,6 +17,11 @@
 
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
+        
+        _setUpBtn = [[UIButton alloc]initWithFrame:CGRectMake(20,10 , 40, 20)];
+        [_setUpBtn setTitle:@"登录" forState:UIControlStateNormal];
+        [_setUpBtn addTarget:self action:@selector(jumpLogin:) forControlEvents:UIControlEventTouchUpInside];
+        
         _headImg = [[UIImageView alloc]initWithFrame:CGRectMake(40,50, 50, 50)];
         _headImg.layer.cornerRadius = 25;
         _headImg.layer.masksToBounds = YES;
@@ -36,6 +41,8 @@
         _infoLbl.textColor = [UIColor whiteColor];
         _infoLbl.font = [UIFont systemFontOfSize:13];
         _infoLbl.text = @"雨迹";
+        
+        [self.contentView addSubview:_setUpBtn];
         [self.contentView addSubview:_headImg];
         [self.contentView addSubview:_nameLbl];
         [self.contentView addSubview:_infoLbl];
@@ -47,6 +54,11 @@
     if(_delegate &&[_delegate respondsToSelector:@selector(touchHeadImg:)])
     {
         [_delegate touchHeadImg:self];
+    }
+}
+- (void)jumpLogin:(UIButton*)btn{
+    if(_delegate && [_delegate respondsToSelector:@selector(jumpLogin:)]){
+        [_delegate jumpLogin:self];
     }
 }
 

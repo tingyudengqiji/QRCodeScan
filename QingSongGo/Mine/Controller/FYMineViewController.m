@@ -9,6 +9,7 @@
 #import "FYMineViewController.h"
 #import "FYMyHeadTableViewCell.h"
 #import "FYEditMyinfoViewController.h"
+#import "FYLoginViewController.h"
 
 @interface FYMineViewController ()<UITableViewDelegate,UITableViewDataSource,FYHeadCellDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -98,8 +99,6 @@ static NSString * const ReuseIdentifier = @"detailCell";
     if(indexPath.section == 0){
         FYEditMyinfoViewController *editVC = [[FYEditMyinfoViewController alloc]init];
         [self.navigationController pushViewController:editVC animated:YES];
-      
-
     }
 
 }
@@ -114,6 +113,12 @@ static NSString * const ReuseIdentifier = @"detailCell";
     }
     return 44;
 }
+
+-(void)jumpLogin:(UIButton *)btn{
+    FYLoginViewController *loginVC = [[FYLoginViewController alloc]init];
+    [self.navigationController pushViewController:loginVC animated:YES];
+}
+
 
 -(void)touchHeadImg:(id)sender{
     UIAlertController *pictureCtr = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleAlert];
