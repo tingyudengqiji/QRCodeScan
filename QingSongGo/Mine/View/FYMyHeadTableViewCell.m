@@ -20,7 +20,7 @@
         
         _setUpBtn = [[UIButton alloc]initWithFrame:CGRectMake(20,10 , 40, 20)];
         [_setUpBtn setTitle:@"登录" forState:UIControlStateNormal];
-        [_setUpBtn addTarget:self action:@selector(jumpLogin:) forControlEvents:UIControlEventTouchUpInside];
+        [_setUpBtn addTarget:self action:@selector(login:) forControlEvents:UIControlEventTouchUpInside];
         
         _headImg = [[UIImageView alloc]initWithFrame:CGRectMake(40,50, 50, 50)];
         _headImg.layer.cornerRadius = 25;
@@ -56,10 +56,10 @@
         [_delegate touchHeadImg:self];
     }
 }
-- (void)jumpLogin:(UIButton*)btn{
-    if(_delegate && [_delegate respondsToSelector:@selector(jumpLogin:)]){
-        [_delegate jumpLogin:self];
-    }
+- (void)login:(id)sender{
+//    if(_delegate && [_delegate respondsToSelector:@selector(jumpLogin:)]){
+//        [_delegate jumpLogin:self];
+//    }
 }
 
 -(void)creatUIWithMode:(NSDictionary*)dic{

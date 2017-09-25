@@ -10,4 +10,7 @@
 
 @interface FYLoginViewController : UIViewController
 
+typedef void (^SuccessedBlock)(NSDictionary * succeedResult);
+typedef void (^FailedBlock)(NSError * error);
+
 @end
