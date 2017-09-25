@@ -116,7 +116,7 @@ static NSString * const ReuseIdentifier = @"detailCell";
 
 -(void)jumpLogin:(UIButton *)btn{
     FYLoginViewController *loginVC = [[FYLoginViewController alloc]init];
-    [self.navigationController pushViewController:loginVC animated:YES];
+    [self.navigationController pushViewController:loginVC animated:NO];
 }
 
 
