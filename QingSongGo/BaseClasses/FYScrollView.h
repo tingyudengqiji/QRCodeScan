@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^ScrollViewBlock)();
+typedef void (^ScrollViewBlock)(void);
 
 @interface FYScrollView : UIView
 

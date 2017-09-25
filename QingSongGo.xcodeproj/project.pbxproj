@@ -50,6 +50,10 @@
 		F1A5884E1F45992B00611DE8 /* FYClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A5884B1F45992B00611DE8 /* FYClassifyViewController.m */; };
 		F1A588541F45997200611DE8 /* FYDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A588511F45997200611DE8 /* FYDiscoveryViewController.m */; };
 		F1A5885A1F45999900611DE8 /* FYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A588571F45999900611DE8 /* FYMineViewController.m */; };
+		F1C352F31F78E57100C5C2AE /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C352EF1F78E57100C5C2AE /* NSObject+YYModel.m */; };
+		F1C352F41F78E57100C5C2AE /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C352F11F78E57100C5C2AE /* YYClassInfo.m */; };
+		F1C352F71F78E6E200C5C2AE /* FYResponseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C352F61F78E6E200C5C2AE /* FYResponseEntity.m */; };
+		F1DF3BDB1F78DFBC00C49FFD /* FYRequestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DF3BDA1F78DFBC00C49FFD /* FYRequestEntity.m */; };
 		F1EB3B911F46794F007E8777 /* FYMyHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EB3B901F46794E007E8777 /* FYMyHeadTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +160,16 @@
 		F1A588561F45999900611DE8 /* FYMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMineViewController.h; sourceTree = "<group>"; };
 		F1A588571F45999900611DE8 /* FYMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYMineViewController.m; sourceTree = "<group>"; };
 		F1A73E3B1F43E47F00609190 /* FYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYColor.h; sourceTree = "<group>"; };
+		F1C352EE1F78E57100C5C2AE /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		F1C352EF1F78E57100C5C2AE /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		F1C352F01F78E57100C5C2AE /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		F1C352F11F78E57100C5C2AE /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		F1C352F21F78E57100C5C2AE /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		F1C352F51F78E6E200C5C2AE /* FYResponseEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYResponseEntity.h; sourceTree = "<group>"; };
+		F1C352F61F78E6E200C5C2AE /* FYResponseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYResponseEntity.m; sourceTree = "<group>"; };
+		F1DF3BD61F78A03200C49FFD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F1DF3BD91F78DFBC00C49FFD /* FYRequestEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYRequestEntity.h; sourceTree = "<group>"; };
+		F1DF3BDA1F78DFBC00C49FFD /* FYRequestEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYRequestEntity.m; sourceTree = "<group>"; };
 		F1EB3B8F1F46794E007E8777 /* FYMyHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMyHeadTableViewCell.h; sourceTree = "<group>"; };
 		F1EB3B901F46794E007E8777 /* FYMyHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYMyHeadTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +202,7 @@
 		F113D44C1F74FFFA0013C9B0 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				F1C352ED1F78E57100C5C2AE /* YYModel */,
 				F113D4801F7500700013C9B0 /* AFNetworking */,
 			);
 			path = Vendors;
@@ -263,6 +278,7 @@
 		F1327D081F4D168B00A3DED4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1DF3BD61F78A03200C49FFD /* MobileCoreServices.framework */,
 				F1327D091F4D168B00A3DED4 /* Photos.framework */,
 			);
 			name = Frameworks;
@@ -314,6 +330,7 @@
 		F17217831F42A4B900FABC1E /* QingSongGo */ = {
 			isa = PBXGroup;
 			children = (
+				F1DF3BD81F78DF7700C49FFD /* network */,
 				F113D4B71F7505890013C9B0 /* Login */,
 				F113D44C1F74FFFA0013C9B0 /* Vendors */,
 				F1A588321F45311700611DE8 /* Category */,
@@ -552,6 +569,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F1C352ED1F78E57100C5C2AE /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1C352EE1F78E57100C5C2AE /* NSObject+YYModel.h */,
+				F1C352EF1F78E57100C5C2AE /* NSObject+YYModel.m */,
+				F1C352F01F78E57100C5C2AE /* YYClassInfo.h */,
+				F1C352F11F78E57100C5C2AE /* YYClassInfo.m */,
+				F1C352F21F78E57100C5C2AE /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		F1DF3BD81F78DF7700C49FFD /* network */ = {
+			isa = PBXGroup;
+			children = (
+				F1DF3BD91F78DFBC00C49FFD /* FYRequestEntity.h */,
+				F1DF3BDA1F78DFBC00C49FFD /* FYRequestEntity.m */,
+				F1C352F51F78E6E200C5C2AE /* FYResponseEntity.h */,
+				F1C352F61F78E6E200C5C2AE /* FYResponseEntity.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -615,7 +655,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FY;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "方进";
 				TargetAttributes = {
 					F17217801F42A4B900FABC1E = {
@@ -700,6 +740,7 @@
 				F1A588481F457DB900611DE8 /* FYHomeCollectionViewCell.m in Sources */,
 				F1327D121F4D717C00A3DED4 /* FYInfoHeadTableViewCell.m in Sources */,
 				F113D4AF1F7500BB0013C9B0 /* UIRefreshControl+AFNetworking.m in Sources */,
+				F1C352F71F78E6E200C5C2AE /* FYResponseEntity.m in Sources */,
 				F113D4B51F7500BB0013C9B0 /* AFURLResponseSerialization.m in Sources */,
 				F113D4AC1F7500BB0013C9B0 /* UIButton+AFNetworking.m in Sources */,
 				F113D4AE1F7500BB0013C9B0 /* UIProgressView+AFNetworking.m in Sources */,
@@ -709,12 +750,15 @@
 				F113D4AA1F7500BB0013C9B0 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				F17217CF1F42A52000FABC1E /* AppDelegate.m in Sources */,
 				F113D4AB1F7500BB0013C9B0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				F1C352F41F78E57100C5C2AE /* YYClassInfo.m in Sources */,
 				F1A588541F45997200611DE8 /* FYDiscoveryViewController.m in Sources */,
 				F113D4B61F7500BB0013C9B0 /* AFURLSessionManager.m in Sources */,
 				F113D4AD1F7500BB0013C9B0 /* UIImageView+AFNetworking.m in Sources */,
 				F1A5885A1F45999900611DE8 /* FYMineViewController.m in Sources */,
 				F1A5883C1F45345200611DE8 /* UIBarButtonItem+FYCateory.m in Sources */,
 				F1A5884E1F45992B00611DE8 /* FYClassifyViewController.m in Sources */,
+				F1C352F31F78E57100C5C2AE /* NSObject+YYModel.m in Sources */,
+				F1DF3BDB1F78DFBC00C49FFD /* FYRequestEntity.m in Sources */,
 				F1327D151F4D7A6100A3DED4 /* FYEditTableViewCell.m in Sources */,
 				F17217861F42A4B900FABC1E /* main.m in Sources */,
 				F113D4A91F7500BB0013C9B0 /* AFImageDownloader.m in Sources */,
@@ -792,7 +836,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -800,7 +846,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -843,7 +893,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -851,7 +903,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
