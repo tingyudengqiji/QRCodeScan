@@ -57,9 +57,9 @@
     }
 }
 - (void)login:(id)sender{
-//    if(_delegate && [_delegate respondsToSelector:@selector(jumpLogin:)]){
-//        [_delegate jumpLogin:self];
-//    }
+    if(_delegate && [_delegate respondsToSelector:@selector(jumpLogin:)]){
+        [_delegate jumpLogin:self];
+    }
 }
 
 -(void)creatUIWithMode:(NSDictionary*)dic{
