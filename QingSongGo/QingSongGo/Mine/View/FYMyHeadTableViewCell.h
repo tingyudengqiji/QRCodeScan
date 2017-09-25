@@ -12,7 +12,7 @@
 @protocol FYHeadCellDelegate <NSObject>
 
 - (void)touchHeadImg:(FYMyHeadTableViewCell *)cell;
-- (void)jumpLogin:(UIButton*)btn;
+- (void)jumpLogin:(id)sender;
 
 @end
 

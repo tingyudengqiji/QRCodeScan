@@ -7,8 +7,9 @@
 //
 
 #import "FYLoginViewController.h"
-#import "AFNetworking.h"
-#import "AFHTTPSessionManager.h"
+#import "FYRequestEntity.h"
+#import "FYResponseEntity.h"
+
 
 @interface FYLoginViewController ()<UITextFieldDelegate>
 
@@ -29,7 +30,7 @@
 }
 
 - (void)setNavButton{
-    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImageName:@"iconfont-fanhui.png" highImageName:nil target:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImageName:@"iconfont-fanhui.png" target:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = leftItem;
 }
 - (void)backAction:(id)sender{
@@ -77,23 +78,39 @@
     [self.view addSubview:_buttonLogin];    //添加登录按钮
 }
 
+
+//-(AFHTTPSessionManager *)manager
+//{
+//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//
+//    // 声明上传的是json格式的参数，需要你和后台约定好，不然会出现后台无法获取到你上传的参数问题
+//    manager.requestSerializer = [AFHTTPRequestSerializer serializer]; // 上传普通格式
+//
+//    // 声明获取到的数据格式
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer]; // AFN不会解析,数据是data，需要自己解析
+//
+//    return manager;
+//}
+
 - (void)buttonLoginAction:(UIButton*)btn{
     // 将请求参数放在请求的字典里
     NSDictionary *param = @{@"userAccounts":@"18550338187", @"userPassword":@"e10adc3949ba59abbe56e057f20f883e"};
-
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager POST:@"http://www.zhimai61.com/MJS/user/userlogin" parameters:param progress:^(NSProgress *_Nonnull uploadProgress){
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if(responseObject){
-            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-            NSLog(@"%@",dict);
-        } else {
-            
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    
+    NSString *urlStr = @"http://www.zhimai61.com/MJS/user/userlogin";
+    FYRequestEntity *entity = [FYRequestEntity alloc];
+//    FYResponseEntity *response = [FYResponseEntity alloc];
+    [entity requestWithUrl:urlStr andDic:param requestWithSuccessBlock:^(FYResponseEntity *response, NSDictionary *options) {
+//        response = ;
+        NSLog(@"%@",[options objectForKey:@"user"]);
+        [self performSelector:@selector(backPop) withObject:nil afterDelay:2];
+    } failBlock:^(NSError *error, NSDictionary *options){
+        NSLog(@"%@",error);
     }];
+}
+
+-(void)backPop{
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"FYLoginViewController" object:self];
+//    [[NSNotificationCenter defaultCenter]postNotificationName:@"FYLoginViewController" object:self userInfo:@{@"login":[[NSUserDefaults standardUserDefaults]objectForKey:@"tel"]}];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

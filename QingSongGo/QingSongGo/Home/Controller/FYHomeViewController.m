@@ -52,10 +52,10 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 -(void)setNavButton{
-    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImageName:@"saoma.png" highImageName:@"" target:self action:@selector(scanButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImageName:@"saoma.png" target:self action:@selector(scanButtonAction) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = leftItem;
     
-    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithImageName:@"msg.png" highImageName:@"" target:self action:@selector(showMessage:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithImageName:@"msg.png"  target:self action:@selector(showMessage:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = rightItem;
 }
 
