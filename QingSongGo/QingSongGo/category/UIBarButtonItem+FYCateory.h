@@ -10,6 +10,8 @@
 
 @interface UIBarButtonItem (FYCateory)
 
-+(instancetype)itemWithImageName:(NSString *)imageName highImageName:(NSString *)highImgName target:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
+//+(instancetype)itemWithImageName:(NSString *)imageName highImageName:(NSString *)highImgName target:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
+
++(instancetype)itemWithImageName:(NSString *)imageName target:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
 
 @end

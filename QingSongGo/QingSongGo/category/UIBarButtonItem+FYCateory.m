@@ -10,10 +10,10 @@
 
 @implementation UIBarButtonItem (FYCateory)
 
-+(instancetype)itemWithImageName:(NSString *)imageName highImageName:(NSString *)highImgName target:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents{
++(instancetype)itemWithImageName:(NSString *)imageName target:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents{
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 25, 25)];
     [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-    [button setBackgroundImage:[UIImage imageNamed:highImgName] forState:UIControlStateHighlighted];
+//    [button setBackgroundImage:[UIImage imageNamed:highImgName] forState:UIControlStateHighlighted];
     [button sizeToFit];
     [button addTarget:target action:action forControlEvents:controlEvents];
     
