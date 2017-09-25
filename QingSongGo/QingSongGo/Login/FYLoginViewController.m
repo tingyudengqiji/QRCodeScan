@@ -27,6 +27,10 @@
     [self.navigationController setNavigationBarHidden:NO animated:NO];
     [self setNavButton];
     [self setView];
+    
+    //接受通知
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveNotificationForLogin:) name:@"FYLoginViewController" object:nil];
+    
 }
 
 - (void)setNavButton{
@@ -52,8 +56,6 @@
     [_userNameTextField.leftView addSubview:userimg];
     [self.view addSubview:_userNameTextField];
     
-    
-    
     _passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(50, _userNameTextField.frame.size.height+_userNameTextField.frame.origin.y+10,ScreenWidth-90, 44)];
     _passwordTextField.delegate = self;
     _passwordTextField.layer.cornerRadius = 5;
@@ -76,6 +78,12 @@
     [_buttonLogin setTitle:@"登录" forState:UIControlStateNormal];
     [_buttonLogin addTarget:self action:@selector(buttonLoginAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_buttonLogin];    //添加登录按钮
+}
+
+-(void)receiveNotificationForLogin:(NSNotification *)notification{
+    if ([notification.userInfo objectForKey:@"login"]) {
+    }
+
 }
 
 
