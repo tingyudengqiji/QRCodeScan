@@ -31,7 +31,7 @@ static NSString * const headReuseIdentifier = @"headCellID";
 }
 
 - (void)setNavButton{
-    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImageName:@"iconfont-fanhui.png" highImageName:nil target:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImageName:@"iconfont-fanhui.png"  target:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = leftItem;
 }
 
