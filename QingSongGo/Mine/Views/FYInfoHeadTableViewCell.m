@@ -17,7 +17,7 @@
 
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
-        _headImg = [[UIImageView alloc]initWithFrame:CGRectMake(25,5, 50, 50)];
+        _headImg = [[UIImageView alloc]initWithFrame:CGRectMake(25,10, 50, 50)];
         _headImg.layer.cornerRadius = 25;
         _headImg.layer.masksToBounds = YES;
         _headImg.clipsToBounds = YES;

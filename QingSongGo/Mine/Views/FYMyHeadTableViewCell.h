@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class FYMyHeadTableViewCell;
-@protocol FYHeadCellDelegate <NSObject>
-
-- (void)touchHeadImg:(FYMyHeadTableViewCell *)cell;
-- (void)jumpLogin:(id)sender;
-
-@end
+//@protocol FYHeadCellDelegate <NSObject>
+//
+////- (void)jumpLogin:(id)sender;
+//
+//@end
 
 @interface FYMyHeadTableViewCell : UITableViewCell
 
@@ -22,8 +21,8 @@
 @property (nonatomic, strong) UIImageView *headImg;//头像
 @property (nonatomic, strong) UILabel *nameLbl;//登录人姓名
 @property (nonatomic, strong) UILabel *infoLbl;//登录人信息
-@property (nonatomic, assign) id<FYHeadCellDelegate>delegate;
 
--(void)creatUIWithMode:(NSDictionary*)dic;
+
+-(void)creatUIWithMode:(FYUserAccount*)dic;
 
 @end
