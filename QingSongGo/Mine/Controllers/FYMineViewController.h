@@ -1,8 +1,8 @@
 //
 //  FYMineViewController.h
-//  轻松购
+//  QingSongGo
 //
-//  Created by 方进 on 2017/8/14.
+//  Created by 方进 on 2017/9/27.
 //  Copyright © 2017年 方进. All rights reserved.
 //
 
