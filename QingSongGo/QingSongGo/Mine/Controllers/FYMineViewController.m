@@ -45,7 +45,7 @@ static NSString * const ReuseIdentifier = @"detailCell";
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
-    _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+//    _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     _tableView.showsVerticalScrollIndicator = NO;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ReuseIdentifier];
     [_tableView registerClass:[FYMyHeadTableViewCell class] forCellReuseIdentifier:FirReuseIdentifier];
