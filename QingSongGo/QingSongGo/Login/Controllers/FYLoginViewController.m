@@ -7,8 +7,8 @@
 //
 
 #import "FYLoginViewController.h"
-#import "FYRequestEntity.h"
-#import "FYResponseEntity.h"
+#import "FYRequestLoginEntity.h"
+#import "FYResponseLoginEntity.h"
 
 
 @interface FYLoginViewController ()<UITextFieldDelegate>
@@ -16,21 +16,19 @@
 @property (strong, nonatomic)UITextField *userNameTextField;
 @property (strong, nonatomic)UITextField *passwordTextField;
 @property (strong, nonatomic)UIButton *buttonLogin;
+
 @end
 
 @implementation FYLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self.view setBackgroundColor:[UIColor colorWithRed:224.0/255.0 green:224.0/255.0 blue:224.0/255.0 alpha:1]];
-    self.title = @"登录";
+    [self.view setBackgroundColor:bgColor];
     [self.navigationController setNavigationBarHidden:NO animated:NO];
+    self.title = @"登录";
     [self setNavButton];
     [self setView];
-    
-    //接受通知
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveNotificationForLogin:) name:@"FYLoginViewController" object:nil];
-    
+        
 }
 
 - (void)setNavButton{
@@ -38,12 +36,16 @@
     self.navigationItem.leftBarButtonItem = leftItem;
 }
 - (void)backAction:(id)sender{
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 - (void)setView{
-    _userNameTextField=[[UITextField alloc]initWithFrame:CGRectMake(50, 200, ScreenWidth-90, 44)];
+    _userNameTextField=[[UITextField alloc]initWithFrame:CGRectMake(50, 250, ScreenWidth-90, 44)];
     _userNameTextField.delegate=self;
+    _userNameTextField.backgroundColor = [UIColor whiteColor];
     _userNameTextField.layer.cornerRadius = 5;
     _userNameTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
     _userNameTextField.layer.borderWidth = 0.7;
@@ -58,6 +60,7 @@
     
     _passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(50, _userNameTextField.frame.size.height+_userNameTextField.frame.origin.y+10,ScreenWidth-90, 44)];
     _passwordTextField.delegate = self;
+    _passwordTextField.backgroundColor = [UIColor whiteColor];
     _passwordTextField.layer.cornerRadius = 5;
     _passwordTextField.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     _passwordTextField.layer.borderWidth = 0.5;
@@ -78,38 +81,30 @@
     [_buttonLogin setTitle:@"登录" forState:UIControlStateNormal];
     [_buttonLogin addTarget:self action:@selector(buttonLoginAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_buttonLogin];    //添加登录按钮
-}
-
--(void)receiveNotificationForLogin:(NSNotification *)notification{
-    if ([notification.userInfo objectForKey:@"login"]) {
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"userAccounts"]!= NULL) {
+        NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"userAccounts"];
+        FYRequestLoginEntity *reqEntity = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        _userNameTextField.text = reqEntity.userAccounts;
+        _passwordTextField.text = reqEntity.userPassword;
     }
-
+    
 }
-
-
-//-(AFHTTPSessionManager *)manager
-//{
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//
-//    // 声明上传的是json格式的参数，需要你和后台约定好，不然会出现后台无法获取到你上传的参数问题
-//    manager.requestSerializer = [AFHTTPRequestSerializer serializer]; // 上传普通格式
-//
-//    // 声明获取到的数据格式
-//    manager.responseSerializer = [AFHTTPResponseSerializer serializer]; // AFN不会解析,数据是data，需要自己解析
-//
-//    return manager;
-//}
 
 - (void)buttonLoginAction:(UIButton*)btn{
-    // 将请求参数放在请求的字典里
-    NSDictionary *param = @{@"userAccounts":@"18550338187", @"userPassword":@"e10adc3949ba59abbe56e057f20f883e"};
-    NSString *urlStr = @"http://www.zhimai61.com/MJS/user/userlogin";
-    FYRequestEntity *entity = [FYRequestEntity alloc];
-//    FYResponseEntity *response = [FYResponseEntity alloc];
-    [entity requestWithUrl:urlStr andDic:param requestWithSuccessBlock:^(FYResponseEntity *response, NSDictionary *options) {
-//        response = ;
-        NSLog(@"%@",[options objectForKey:@"user"]);
-        [self performSelector:@selector(backPop) withObject:nil afterDelay:2];
+
+    FYRequestLoginEntity *reqEntity = [[FYRequestLoginEntity alloc]init];
+    reqEntity.userAccounts = @"18550338187";
+    reqEntity.userPassword = @"e10adc3949ba59abbe56e057f20f883e";
+    [reqEntity requestWithSuccessBlock:^(FYResponseLoginEntity *response, NSDictionary *options) {
+        if ([response.success isEqualToString:@"true"]) {
+            NSData *data  = [NSKeyedArchiver archivedDataWithRootObject:reqEntity];
+            [[NSUserDefaults standardUserDefaults]setObject:data forKey:@"userAccounts"];
+            NSData *userInfoData = [NSKeyedArchiver archivedDataWithRootObject:response.user];
+            [[NSUserDefaults standardUserDefaults]setObject:userInfoData forKey:@"userInfo"];
+            [self performSelector:@selector(backPop) withObject:nil afterDelay:0.5];
+        }
+       
     } failBlock:^(NSError *error, NSDictionary *options){
         NSLog(@"%@",error);
     }];
@@ -118,7 +113,10 @@
 -(void)backPop{
     [[NSNotificationCenter defaultCenter]postNotificationName:@"FYLoginViewController" object:self];
 //    [[NSNotificationCenter defaultCenter]postNotificationName:@"FYLoginViewController" object:self userInfo:@{@"login":[[NSUserDefaults standardUserDefaults]objectForKey:@"tel"]}];
-    [self.navigationController popViewControllerAnimated:YES];
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 
