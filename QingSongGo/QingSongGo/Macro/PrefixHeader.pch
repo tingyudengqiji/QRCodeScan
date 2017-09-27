@@ -10,10 +10,20 @@
 #define PrefixHeader_pch
 
 
+//生产环境和测试
+
+#define BASEURL @"http://www.zhimai61.com/MJS/"
+
+//生产环境
+//#define BASEURL @"http://139.224.114.7/“
+
+
+
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 
 #import "FYColor.h" 
 #import "UIBarButtonItem+FYCateory.h"
+#import "FYUserAccount.h"
 
 #endif /* PrefixHeader_pch */

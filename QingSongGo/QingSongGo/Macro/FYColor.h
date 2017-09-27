@@ -11,7 +11,7 @@
 
 #define RGBA(r,g,b,a)   [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
 
-
+#define bgColor    RGBA(224,224,224,1)
 #define headColor  RGBA(168,82,45,1)
 
 
