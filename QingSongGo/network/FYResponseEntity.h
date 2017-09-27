@@ -10,4 +10,6 @@
 
 @interface FYResponseEntity : NSObject
 
+@property (nonatomic, strong)NSDictionary *user;
+
 @end

@@ -14,7 +14,7 @@ typedef void(^RequestFailBlock)(NSError *error, NSDictionary *options);
 
 @interface FYRequestEntity : NSObject
 
-- (void)requestWithUrl:(NSString *)url andDic:(NSDictionary *)dic requestWithSuccessBlock:(RequestSuccessBlock)successBlock failBlock:(RequestFailBlock)failBlock;
+- (void)requestWithSuccessBlock:(RequestSuccessBlock)successBlock failBlock:(RequestFailBlock)failBlock;
 
 //- (void)uploadData:(NSData *)data successBlack:(RequestSuccessBlock)successBlock failBlock:(RequestFailBlock)failBlock;
 
