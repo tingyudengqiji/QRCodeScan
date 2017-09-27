@@ -13,16 +13,27 @@
 
 @implementation FYRequestEntity
 
-- (void)requestWithUrl:(NSString *)url andDic:(NSDictionary *)dic requestWithSuccessBlock:(RequestSuccessBlock)successBlock failBlock:(RequestFailBlock)failBlock{
+
+- (void)requestWithSuccessBlock:(RequestSuccessBlock)successBlock failBlock:(RequestFailBlock)failBlock{
+    NSString *strServerUrl = [[NSUserDefaults standardUserDefaults] objectForKey:@"FYServerURL"];
+    NSMutableDictionary *params = [self yy_modelToJSONObject];
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
-    [manger POST:url parameters:dic progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manger POST:strServerUrl parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject
+                                                           options:NSJSONWritingPrettyPrinted
+                                                             error:nil];
+        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSLog(@"*********%@",jsonString);
+        
         NSString *requestClassStr = NSStringFromClass(self.class);
-        NSString *responseClassStr = [requestClassStr stringByReplacingOccurrencesOfString:@"Req" withString:@"Res"];
-        Class reponseClass = NSClassFromString(responseClassStr);
+        NSString *responseClassStr = [requestClassStr stringByReplacingOccurrencesOfString:@"FYRequest" withString:@"FYResponse"];
+        id reponseClass = NSClassFromString(responseClassStr);
         if (reponseClass) {
             id resObject = [reponseClass yy_modelWithJSON:responseObject];
+
             if (resObject) {
                 successBlock(resObject, responseObject);
             }else{
