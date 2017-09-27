@@ -17,6 +17,8 @@
 		F16218051F42F6E600ED1F15 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16218001F42F6E600ED1F15 /* 3.jpg */; };
 		F16218061F42F6E600ED1F15 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16218011F42F6E600ED1F15 /* 4.jpg */; };
 		F16218071F42F6E600ED1F15 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16218021F42F6E600ED1F15 /* 5.jpg */; };
+		F16A9D7D1F7B99470000155D /* FYQRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16A9D7C1F7B99470000155D /* FYQRCodeScanViewController.m */; };
+		F16A9D7F1F7B997C0000155D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16A9D7E1F7B997C0000155D /* AVFoundation.framework */; };
 		F17217861F42A4B900FABC1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17217851F42A4B900FABC1E /* main.m */; };
 		F172178F1F42A4B900FABC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F172178D1F42A4B900FABC1E /* Main.storyboard */; };
 		F17217911F42A4B900FABC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17217901F42A4B900FABC1E /* Assets.xcassets */; };
@@ -93,6 +95,9 @@
 		F16218001F42F6E600ED1F15 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		F16218011F42F6E600ED1F15 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		F16218021F42F6E600ED1F15 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		F16A9D7B1F7B99470000155D /* FYQRCodeScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYQRCodeScanViewController.h; sourceTree = "<group>"; };
+		F16A9D7C1F7B99470000155D /* FYQRCodeScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYQRCodeScanViewController.m; sourceTree = "<group>"; };
+		F16A9D7E1F7B997C0000155D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F17217811F42A4B900FABC1E /* QingSongGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QingSongGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17217851F42A4B900FABC1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F172178E1F42A4B900FABC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -188,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16A9D7F1F7B997C0000155D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +244,7 @@
 		F1327D081F4D168B00A3DED4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F16A9D7E1F7B997C0000155D /* AVFoundation.framework */,
 				F1DF3BD61F78A03200C49FFD /* MobileCoreServices.framework */,
 				F1327D091F4D168B00A3DED4 /* Photos.framework */,
 			);
@@ -478,6 +485,8 @@
 			children = (
 				F1A588411F457D7E00611DE8 /* FYHomeViewController.h */,
 				F1A588421F457D7E00611DE8 /* FYHomeViewController.m */,
+				F16A9D7B1F7B99470000155D /* FYQRCodeScanViewController.h */,
+				F16A9D7C1F7B99470000155D /* FYQRCodeScanViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -789,6 +798,7 @@
 				F1DF3BDB1F78DFBC00C49FFD /* FYRequestEntity.m in Sources */,
 				F1D380391F794A35006D21FD /* UIWebView+AFNetworking.m in Sources */,
 				F17217861F42A4B900FABC1E /* main.m in Sources */,
+				F16A9D7D1F7B99470000155D /* FYQRCodeScanViewController.m in Sources */,
 				F1D380381F794A35006D21FD /* UIRefreshControl+AFNetworking.m in Sources */,
 				F1D3802E1F794A35006D21FD /* AFURLRequestSerialization.m in Sources */,
 				F146C7311F7A37A800EA9E38 /* FYUserAccount.m in Sources */,
