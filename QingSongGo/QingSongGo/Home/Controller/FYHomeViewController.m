@@ -9,6 +9,7 @@
 #import "FYHomeViewController.h"
 #import "FYScrollView.h"
 #import "FYHomeCollectionViewCell.h"
+#import "FYQRCodeScanViewController.h"
 
 
 #define ITEM_WIDTH (ScreenWidth-50) / 4
@@ -91,13 +92,8 @@ static NSString * const reuseIdentifier = @"Cell";
 
 //扫一扫
 -(void)scanButtonAction{
-    UIAlertController *alterContr = [UIAlertController alertControllerWithTitle:@"标题" message:@"点击了扫一扫" preferredStyle:UIAlertControllerStyleAlert];
-
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
-    [alterContr addAction:cancelAction];
-    [alterContr addAction:okAction];
-    [self presentViewController:alterContr animated:YES completion:nil];
+    FYQRCodeScanViewController *QRCodeScanVC = [[FYQRCodeScanViewController alloc]init];
+    [self.navigationController pushViewController:QRCodeScanVC animated:YES];
 }
 
 -(void)showMessage:(id)sender{
