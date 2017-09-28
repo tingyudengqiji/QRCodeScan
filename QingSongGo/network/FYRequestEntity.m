@@ -18,6 +18,9 @@
     NSString *strServerUrl = [[NSUserDefaults standardUserDefaults] objectForKey:@"FYServerURL"];
     NSMutableDictionary *params = [self yy_modelToJSONObject];
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
+    UIWindow * window = [UIApplication sharedApplication].keyWindow ;
+    
+    [MBProgressHUD showHUDAddedTo:window animated:YES];
     [manger POST:strServerUrl parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -42,7 +45,9 @@
         }else{
             successBlock(nil,responseObject);
         }
+        [MBProgressHUD hideAllHUDsForView:window animated:YES];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [MBProgressHUD hideAllHUDsForView:window animated:YES];
         failBlock(error,nil);
     }];
 }

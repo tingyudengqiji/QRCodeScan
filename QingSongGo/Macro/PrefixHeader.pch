@@ -24,6 +24,9 @@
 
 #import "FYColor.h" 
 #import "UIBarButtonItem+FYCateory.h"
+#import "MBProgressHUD.h"
+
+
 #import "FYUserAccount.h"
 
 #endif /* PrefixHeader_pch */
