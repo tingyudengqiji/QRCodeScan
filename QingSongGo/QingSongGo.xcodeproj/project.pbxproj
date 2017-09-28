@@ -11,6 +11,7 @@
 		F146C7241F79F42D00EA9E38 /* FYRequestLoginEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F146C7231F79F42D00EA9E38 /* FYRequestLoginEntity.m */; };
 		F146C7281F79F47400EA9E38 /* FYResponseLoginEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F146C7271F79F47400EA9E38 /* FYResponseLoginEntity.m */; };
 		F146C7311F7A37A800EA9E38 /* FYUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F146C7301F7A37A800EA9E38 /* FYUserAccount.m */; };
+		F15FDB321F7C9F990035906F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F15FDB311F7C9F990035906F /* MBProgressHUD.m */; };
 		F16217FC1F42DD1F00ED1F15 /* FYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16217FB1F42DD1F00ED1F15 /* FYScrollView.m */; };
 		F16218031F42F6E600ED1F15 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16217FE1F42F6E600ED1F15 /* 1.jpg */; };
 		F16218041F42F6E600ED1F15 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16217FF1F42F6E600ED1F15 /* 2.jpg */; };
@@ -88,6 +89,8 @@
 		F146C7271F79F47400EA9E38 /* FYResponseLoginEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYResponseLoginEntity.m; sourceTree = "<group>"; };
 		F146C72F1F7A37A800EA9E38 /* FYUserAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYUserAccount.h; sourceTree = "<group>"; };
 		F146C7301F7A37A800EA9E38 /* FYUserAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYUserAccount.m; sourceTree = "<group>"; };
+		F15FDB301F7C9F990035906F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F15FDB311F7C9F990035906F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F16217FA1F42DD1F00ED1F15 /* FYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYScrollView.h; sourceTree = "<group>"; };
 		F16217FB1F42DD1F00ED1F15 /* FYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYScrollView.m; sourceTree = "<group>"; };
 		F16217FE1F42F6E600ED1F15 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -217,6 +220,7 @@
 		F113D44C1F74FFFA0013C9B0 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				F15FDB2F1F7C9F990035906F /* MBProgressHUD */,
 				F1C352ED1F78E57100C5C2AE /* YYModel */,
 				F113D4801F7500700013C9B0 /* AFNetworking */,
 			);
@@ -271,6 +275,15 @@
 				F146C7301F7A37A800EA9E38 /* FYUserAccount.m */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		F15FDB2F1F7C9F990035906F /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F15FDB301F7C9F990035906F /* MBProgressHUD.h */,
+				F15FDB311F7C9F990035906F /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		F16217F91F42DCC900ED1F15 /* Common */ = {
@@ -810,6 +823,7 @@
 				F17217D01F42A52000FABC1E /* FYTabBarController.m in Sources */,
 				F17217D11F42A52000FABC1E /* FYBaseNavController.m in Sources */,
 				F1A588451F457D7E00611DE8 /* FYHomeViewController.m in Sources */,
+				F15FDB321F7C9F990035906F /* MBProgressHUD.m in Sources */,
 				F146C7241F79F42D00EA9E38 /* FYRequestLoginEntity.m in Sources */,
 				F194DD911F7B596C00B42329 /* FYEditMyinfoViewController.m in Sources */,
 				F1D380361F794A35006D21FD /* UIImageView+AFNetworking.m in Sources */,
