@@ -169,10 +169,10 @@
 //
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"扫描结果" message:stringValue preferredStyle:UIAlertControllerStyleAlert];
         [alert addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//            if (_session != nil && timer != nil) {
-//                [_session startRunning];
-//                [timer setFireDate:[NSDate date]];
-//            }
+            if (_session != nil && timer != nil) {
+                [_session startRunning];
+                [timer setFireDate:[NSDate date]];
+            }
             NSLog(@"%@",stringValue);
             
         }]];
